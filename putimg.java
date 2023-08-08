@@ -5,7 +5,7 @@ public class putimg {
     public static void main(String[] args) {
        try (Scanner s = new Scanner(System.in)){
             Class.forName("com.mysql.cj.jdbc.Driver");
-            // Connection con = DriverManager.getConnection(null, null, null)
+            Connection con1 = DriverManager.getConnection(null, null, null);
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/fromthetop","root","root");
             if (con.isClosed()) {
                 System.out.println("error");
